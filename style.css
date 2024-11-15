@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Reseteo básico para eliminar márgenes y paddings predeterminados */
+
+/* Estilo para el header */
+header {
+    background-color: #0a090a; /* Fondo oscuro para el encabezado */
+    padding: 10px 40px; /* Padding para el espacio alrededor */
+}
+
+/* Contenedor para el logo y el menú */
+.menu {
+    display: flex; /* Usamos Flexbox para alinear el logo y el menú */
+    justify-content: space-between; /* Espaciado entre el logo y el menú */
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    height: 100px; /* Ajustamos la altura del contenedor */
+}
+
+/* Estilo para el logo */
+.navbar-menu img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el menú */
+.navbar {
+    display: flex; /* Usamos Flexbox para organizar los elementos en fila */
+    list-style: none; /* Elimina las viñetas */
+    margin-left: 20px; /* Ajusta el espacio entre el logo y los elementos del menú */
+}
+
+.menu-navbar {
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menu-navbar a {
+    color: rgba(236, 6, 217, 0.945); /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.menu-navbar a:hover {
+    background-color: #45a049; /* Fondo verde más oscuro al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    /* Cambiar el layout en pantallas pequeñas */
+    .menu {
+        flex-direction: column; /* Organiza el logo y menú en columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar {
+        flex-direction: column; /* Organiza los enlaces en columna */
+    }
+
+    .menu-navbar {
+        margin: 10px 0; /* Espacio vertical entre los enlaces */
+    }
+}
+
+.imagen-contenedor {
+    position: relative; /* Hace posible la superposición del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo para la imagen */
+.imagen-contenedor img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 800px; /* Fija la altura de la imagen */
+    object-fit: cover; /* La imagen se recorta si es necesario para mantener su proporción */
+}
+.arriba {
+    position: absolute;      /* Se posiciona respecto al contenedor más cercano */
+    top: 20;                  /* Se coloca en la parte superior del contenedor o página */
+    left: 50%;               /* Centra horizontalmente */
+    transform: translateX(-50%);  /* Ajusta el desplazamiento para centrar el texto */
+    font-size: 16px;
+    color: rgb(46, 43, 226);
+    margin: 5px 0;
+    z-index: 10;   
+}
+
+/* Estilo del texto */
+.centro {
+    position: absolute; /* Coloca el texto sobre la imagen */
+    top: 50%; /* Mueve el texto al centro vertical */
+    left: 50%; /* Mueve el texto al centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para centrar el texto perfectamente */
+    color: rgb(14, 12, 12); /* Color  para el texto */
+    font-size: 3rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Opcional, para hacer el texto más destacado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional, agrega sombra al texto para hacerlo más legible */
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+/* Estilo para la imagen en el pie de página */
+.footer img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Estilo para los párrafos dentro del footer */
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Estilo para los enlaces dentro del footer */
+.footer a {
+    color: #66aaff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Agregar algo de espacio para los enlaces */
+.footer a + a {
+    margin-left: 15px;
+}
