@@ -85,8 +85,8 @@ header {
     top: 20;                  /* Se coloca en la parte superior del contenedor o página */
     left: 50%;               /* Centra horizontalmente */
     transform: translateX(-50%);  /* Ajusta el desplazamiento para centrar el texto */
-    font-size: 16px;
-    color: rgb(46, 43, 226);
+    font-size: 30px;
+    color: rgb(7, 7, 12);
     margin: 5px 0;
     z-index: 10;   
 }
@@ -102,44 +102,190 @@ header {
     font-weight: bold; /* Opcional, para hacer el texto más destacado */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional, agrega sombra al texto para hacerlo más legible */
 }
+
+ /* Configuración del cuadro de información */
+ .info-cuadro {
+    position: absolute; /* Permite colocarlo en cualquier parte del contenedor */
+    bottom: 20px; /* Lo posiciona en la parte inferior de la imagen */
+    left: 20px; /* Lo ajusta hacia la izquierda de la imagen */
+    width: 300px; /* Ancho del cuadro */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-    box-sizing: border-box;
+    background-color: #78c9ee;
+    border-top: 1px solid #15a0f0;
 }
 
-/* Estilo para la imagen en el pie de página */
-.footer img {
-    height: 100px;
-    width: 100px;
-}
-
-/* Estilo para los párrafos dentro del footer */
-.footer p {
-    margin: 5px 0;
+.boton {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: rgb(89, 60, 252);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
 }
 
-/* Estilo para los enlaces dentro del footer */
-.footer a {
-    color: #66aaff;
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info a {
+    display: block;
+    color: #150463;
     text-decoration: none;
-    font-size: 16px;
-    margin: 0 10px;
+    margin: 5px 0;
 }
 
-/* Efecto al pasar el ratón sobre los enlaces */
-.footer a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
-/* Agregar algo de espacio para los enlaces */
-.footer a + a {
-    margin-left: 15px;
+.logo {
+    margin-top: 20px;
+    max-width: 100px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+h2.subtitulo,
+h2.subtitulo {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #088ce4;
+    
+ 
+border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+p.parrafo {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #45a049;
+    
+}
+
+/* Links */
+a {
+    color: #00509e;
+    
+ 
+text-decoration: none;
+}
+
+.img1 {
+    display: block; /* Hace que la imagen sea un bloque */
+    max-width: 30%; /* La imagen ocupará un máximo del 50% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin: 20px auto; /* Centra horizontalmente con `auto` y agrega espacio arriba y abajo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Sombra para darle un toque más estético */
+}
+.imag2 {
+    display: block; /* Hace que la imagen sea un bloque */
+    max-width: 50%; /* La imagen ocupará un máximo del 50% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin: 10px auto; /* Centra horizontalmente con `auto` y agrega espacio arriba y abajo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Sombra para darle un toque más estético */
+
+}
+
+/* QR Box */
+.toca {
+    
+   
+margin: 20px auto;
+    padding: 15px;
+    
+max-width: 300px;
+    text-align: center;
+    border: 2px dashed #007acc;
+    border-radius: 10px;
+background-color: #f0f8ff;
+}
+
+.toca p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.toca img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+/* Estilos para las tablas */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+}
+th, td {
+    border: 1px solid #eae8e9;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #e7557e;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+td {
+    text-align: justify;
+}
+
+ /* Estilo para el encabezado */
+h3.parrafobi {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a6bbf; /* Azul brillante */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    text-align: left;
+    border-bottom: 2px solid #2a6bbf; /* Línea decorativa */
+    padding-bottom: 5px; /* Espacio entre texto y línea */
+}
+
+/* Estilo para la lista */
+ul.ventajas-lista {
+    padding-left: 30px; /* Espacio desde el borde izquierdo */
+    margin-bottom: 20px; /* Espacio debajo de la lista */
+    list-style-type: disc; /* Viñetas por defecto (círculo lleno) */
+}
+
+/* Estilo para los elementos de la lista */
+ul.ventajas-lista li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+    line-height: 1.8; /* Altura de línea */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #034113; /* Color del texto */
+}
+
+/* Personalización de las viñetas (opcional) */
+ul.ventajas-lista li::marker {
+    color: #2a6bbf; /* Color de la viñeta */
+    font-size: 18px; /* Tamaño de la viñeta */
 }
